@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>作品集 - 我的博客</title>
+  <link rel="stylesheet" href="common.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    .works-container {
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 0 2rem;
+    }
+
+    .works-header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    .works-title {
+      font-size: 2rem;
+      color: #2c3e50;
+      margin-bottom: 0.5rem;
+    }
+
+    .works-subtitle {
+      color: #7f8c8d;
+      font-size: 1rem;
+    }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin-bottom: 3rem;
+    }
+
+    .project-card {
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .project-img {
+      width: 100%;
+      height: 200px;
+      background-color: #e3f2fd;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #3498db;
+      font-size: 3rem;
+    }
+
+    .project-content {
+      padding: 1.5rem;
+    }
+
+    .project-title {
+      font-size: 1.2rem;
+      color: #2c3e50;
+      margin-bottom: 0.8rem;
+    }
+
+    .project-desc {
+      color: #555;
+      font-size: 0.9rem;
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+
+    .project-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .project-tag {
+      padding: 0.2rem 0.6rem;
+      background-color: #f1f9ff;
+      color: #2980b9;
+      border-radius: 4px;
+      font-size: 0.8rem;
+    }
+
+    .project-btn {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.5rem 1rem;
+      background-color: #3498db;
+      color: #fff;
+      border-radius: 4px;
+      text-decoration: none;
+      font-size: 0.9rem;
+      transition: background-color 0.3s ease;
+    }
+
+    .project-btn:hover {
+      background-color: #2980b9;
+    }
+  </style>
+</head>
+<body>
+  <nav class="nav">
+    <a href=" " class="logo">我的博客</a >
+    <div class="hamburger" id="hamburger">
+      <i class="fas fa-bars"></i>
+    </div>
+    <div class="nav-links" id="navLinks">
+      <a href="index.html">首页</a>
+      <a href="lhm.html">文章列表</a>
+      <a href="ljh.html">关于我</a>
+      <a href="ws.html">作品集</a>
+    </div>
+  </nav>
+
+  <div class="works-container">
+    <div class="works-header">
+      <h1 class="works-title">我的项目作品集</h1>
+      <p class="works-subtitle">人工智能与安防领域的学习实践成果</p >
+    </div>
+
+    <div class="projects-grid">
+      <div class="project-card">
+        <div class="project-img">
+          <i class="fas fa-video"></i>
+        </div>
+        <div class="project-content">
+          <h3 class="project-title">基于YOLOv8的安防目标检测系统</h3>
+          <p class="project-desc">针对安防场景开发的实时目标检测系统，支持行人、车辆、可疑物品识别，可部署在监控摄像头端，具备告警联动功能。</p >
+          <div class="project-tags">
+            <span class="project-tag">YOLOv8</span>
+            <span class="project-tag">目标检测</span>
+            <span class="project-tag">安防监控</span>
+          </div>
+          <a href="#" class="project-btn">查看详情</a >
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-img">
+          <i class="fas fa-user-check"></i>
+        </div>
+        <div class="project-content">
+          <h3 class="project-title">人脸考勤与身份验证系统</h3>
+          <p class="project-desc">结合OpenCV与深度学习模型实现的人脸比对系统，支持离线考勤、活体检测，适用于校园、企业等场景的身份核验。</p >
+          <div class="project-tags">
+            <span class="project-tag">OpenCV</span>
+            <span class="project-tag">人脸识别</span>
+            <span class="project-tag">考勤系统</span>
+          </div>
+          <a href="#" class="project-btn">查看详情</a >
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-img">
+          <i class="fas fa-house-signal"></i>
+        </div>
+        <div class="project-content">
+          <h3 class="project-title">智能家居安防联动平台</h3>
+          <p class="project-desc">基于物联网技术的安防平台，整合门窗传感器、烟雾报警器等设备，支持异常状态实时推送与远程控制。</p >
+          <div class="project-tags">
+            <span class="project-tag">物联网</span>
+            <span class="project-tag">智能家居</span>
+            <span class="project-tag">联动告警</span>
+          </div>
+          <a href="#" class="project-btn">查看详情</a >
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-img">
+          <i class="fas fa-walking"></i>
+        </div>
+        <div class="project-content">
+          <h3 class="project-title">AI视频行为分析系统</h3>
+          <p class="project-desc">能够识别打架、跌倒、越界等危险行为的分析系统，基于深度学习骨架提取算法，适用于园区、商场等公共区域。</p >
+          <div class="project-tags">
+            <span class="project-tag">行为分析</span>
+            <span class="project-tag">骨架提取</span>
+            <span class="project-tag">异常检测</span>
+          </div>
+          <a href="#" class="project-btn">查看详情</a >
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="footer">
+    <p>ljh</p >
+    <div class="social-links">
+      <a href="#"><i class="fab fa-github"></i></a >
+      <a href="#"><i class="fab fa-csdn"></i></a >
+      <a href="#"><i class="fab fa-weixin"></i></a >
+    </div>
+  </footer>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('navLinks');
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+    });
+  </script>
+</body>
+</html>

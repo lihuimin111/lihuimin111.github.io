@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>关于我 - 我的博客</title>
+  <link rel="stylesheet" href="common.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+    .about-container {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 0 2rem;
+    }
+
+    .about-header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    .about-avatar {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 1rem;
+    }
+
+    .about-title {
+      font-size: 2rem;
+      color: #2c3e50;
+    }
+
+    .intro {
+      background-color: #fff;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      margin-bottom: 3rem;
+      line-height: 1.8;
+    }
+
+    .intro h3 {
+      color: #2c3e50;
+      margin-bottom: 1rem;
+      font-size: 1.5rem;
+    }
+
+    .intro p {
+      color: #333;
+      margin-bottom: 1rem;
+    }
+
+    .skills {
+      background-color: #fff;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      margin-bottom: 3rem;
+    }
+
+    .skills h3 {
+      color: #2c3e50;
+      margin-bottom: 2rem;
+      font-size: 1.5rem;
+      text-align: center;
+    }
+
+    .skill-item {
+      margin-bottom: 1.5rem;
+    }
+
+    .skill-name {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 0.5rem;
+      font-weight: 500;
+    }
+
+    .skill-bar {
+      height: 10px;
+      background-color: #f1f1f1;
+      border-radius: 5px;
+      overflow: hidden;
+    }
+
+    .skill-progress {
+      height: 100%;
+      background-color: #3498db;
+      border-radius: 5px;
+    }
+
+    .timeline {
+      background-color: #fff;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      margin-bottom: 3rem;
+    }
+
+    .timeline h3 {
+      color: #2c3e50;
+      margin-bottom: 2rem;
+      font-size: 1.5rem;
+      text-align: center;
+    }
+
+    .timeline-item {
+      position: relative;
+      padding-left: 2rem;
+      margin-bottom: 2rem;
+      border-left: 2px solid #3498db;
+    }
+
+    .timeline-item:last-child {
+      border-left: 2px solid transparent;
+    }
+
+    .timeline-dot {
+      position: absolute;
+      left: -6px;
+      top: 0;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: #3498db;
+    }
+
+    .timeline-date {
+      font-weight: bold;
+      color: #2c3e50;
+      margin-bottom: 0.5rem;
+    }
+
+    .timeline-content {
+      color: #333;
+    }
+
+    .contact {
+      background-color: #fff;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .contact h3 {
+      color: #2c3e50;
+      margin-bottom: 2rem;
+      font-size: 1.5rem;
+    }
+
+    .contact-list {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
+
+    .contact-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .contact-icon {
+      font-size: 2rem;
+      color: #3498db;
+      margin-bottom: 0.5rem;
+    }
+
+    .contact-text {
+      color: #333;
+    }
+    .nav{
+      text-decoration: none;
+    }
+    .nav-links{
+      display: flex;
+      text-decoration: none;
+
+    }
+  </style>
+</head>
+<body>
+  <nav class="nav">
+    <a href=" " class="logo">我的博客</a >
+    <div class="hamburger" id="hamburger">
+      <i class="fas fa-bars"></i>
+    </div>
+    <div class="nav-links" id="navLinks">
+      <a href="index.html">首页</a>
+      <a href="ws.html">文章列表</a>
+      <a href="ljh.html">关于我</a>
+      <a href="lhm.html">作品集</a>
+    </div>
+  </nav>
+
+  <div class="about-container">
+    <div class="about-header">
+      <h1 class="about-title">关于我们</h1>
+      <h2 class="about-title">算法驱动创新，智能改变世界</h2>
+
+    <section class="intro">
+      <h4>A family who love and care for each other</h4>
+      <h3>个人简介</h3>
+      <p>大家好，我是一名前端开发爱好者，专注于HTML、CSS、JavaScript及相关框架的学习与实践。拥有多年的前端开发学习经历，擅长响应式网页设计、组件化开发，热衷于探索前端领域的新技术和新趋势。</p >
+    </section>
+
+    <section class="intro"> 
+      <h3>个人爱好</h3>
+      <p>除了编程，我还喜欢摄影、阅读和旅行，这些爱好让我能从不同角度发现美，也为我的设计工作带来更多灵感。我始终相信，技术与美学的结合，才能打造出优秀的前端产品。</p >
+    </section>  
+    <section class="skills">
+      <h3>技术能力</h3>
+      <div class="skill-item">
+        <div class="skill-name">
+          <span>HTML5</span>
+          <span>90%</span>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-progress" style="width: 90%;"></div>
+        </div>
+      </div>
+      <div class="skill-item">
+        <div class="skill-name">
+          <span>CSS3</span>
+          <span>85%</span>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-progress" style="width: 85%;"></div>
+        </div>
+      </div>
+      <div class="skill-item">
+        <div class="skill-name">
+          <span>JavaScript</span>
+          <span>80%</span>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-progress" style="width: 80%;"></div>
+        </div>
+      </div>
+      <div class="skill-item">
+        <div class="skill-name">
+          <span>Vue.js</span>
+          <span>75%</span>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-progress" style="width: 75%;"></div>
+        </div>
+      </div>
+      <div class="skill-item">
+        <div class="skill-name">
+          <span>React</span>
+          <span>60%</span>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-progress" style="width: 60%;"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="timeline">
+      <h3>成长历程</h3>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">2025年9月</div>
+        <div class="timeline-content">开始系统学习前端开发基础，掌握HTML和CSS核心知识。</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">2025年10月</div>
+        <div class="timeline-content">学习JavaScript编程语言，完成多个小型交互案例开发。</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">2025年11月</div>
+        <div class="timeline-content">接触Vue.js框架，开发第一个基于Vue的单页面应用。</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">2025年12月</div>
+        <div class="timeline-content">开始学习React框架，参与开源项目的前端模块开发。</div>
+      </div>
+    </section>
+
+    <section class="contact">
+      <h3>联系我</h3>
+      <div class="contact-list">
+        <div class="contact-item">
+          <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+          <div class="contact-text">2799420839@qq.com</div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon"><i class="fab fa-github"></i></div>
+          <div class="contact-text">github.com/example</div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon"><i class="fab fa-weixin"></i></div>
+          <div class="contact-text">wxid19534992006</div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer class="footer">
+    <div class="social-links">
+      <a href="#"><i class="fab fa-github"></i></a >
+      <a href="#"><i class="fab fa-csdn"></i></a >
+      <a href="#"><i class="fab fa-weixin"></i></a >
+    </div>
+  </footer>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('navLinks');
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+    });
+  </script>
+</body>
+</html>

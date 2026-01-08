@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>文章列表 - 我的博客</title>
+  <link rel="stylesheet" href="common.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    /* 列表页核心样式 */
+    .list-container {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 0 2rem;
+    }
+
+    .list-header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    .list-title {
+      font-size: 2rem;
+      color: #2c3e50;
+      margin-bottom: 0.5rem;
+    }
+
+    .list-subtitle {
+      color: #7f8c8d;
+      font-size: 1rem;
+    }
+
+    .article-card {
+      background-color: #fff;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      margin-bottom: 2rem;
+      transition: transform 0.3s ease;
+    }
+
+    .article-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .article-title {
+      font-size: 1.5rem;
+      color: #2c3e50;
+      margin-bottom: 1rem;
+      text-decoration: none;
+      display: block;
+    }
+
+    .article-title:hover {
+      color: #3498db;
+    }
+
+    .article-meta {
+      display: flex;
+      gap: 1.5rem;
+      margin-bottom: 1rem;
+      color: #7f8c8d;
+      font-size: 0.9rem;
+    }
+
+    .meta-item {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .article-excerpt {
+      color: #333;
+      line-height: 1.8;
+      margin-bottom: 1.5rem;
+    }
+
+    .article-tag {
+      display: inline-block;
+      padding: 0.3rem 0.8rem;
+      background-color: #e3f2fd;
+      color: #3498db;
+      border-radius: 4px;
+      font-size: 0.8rem;
+      margin-right: 0.5rem;
+    }
+
+    .pagination {
+      display: flex;
+      justify-content: center;
+      gap: 0.5rem;
+      margin-top: 3rem;
+    }
+
+    .page-btn {
+      padding: 0.5rem 1rem;
+      border: 1px solid #3498db;
+      border-radius: 4px;
+      color: #3498db;
+      background-color: #fff;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .page-btn:hover, .page-btn.active {
+      background-color: #3498db;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <nav class="nav">
+    <a href=" " class="logo">我的博客</a >
+    <div class="hamburger" id="hamburger">
+      <i class="fas fa-bars"></i>
+    </div>
+    <div class="nav-links" id="navLinks">
+      <a href="index.html">首页</a>
+      <a href="lhm.html">文章列表</a>
+      <a href="ljh.html">关于我</a>
+      <a href="ws.html">作品集</a>
+    </div>
+  </nav>
+
+  <div class="list-container">
+    <div class="list-header">
+      <h1 class="list-title">文章列表</h1>
+      <p class="list-subtitle">沉淀技术干货，记录学习点滴</p >
+    </div>
+
+    <article class="article-card">
+      <a href="#" class="article-title">HTML5 语义化标签的正确使用姿势</a >
+      <div class="article-meta">
+        <div class="meta-item">
+          <i class="fas fa-calendar-alt"></i>
+          <span>2026-01-06</span>
+        </div>
+        <div class="meta-item">
+          <i class="fas fa-folder-open"></i>
+          <span>前端基础</span>
+        </div>
+        <div class="meta-item">
+          <i class="fas fa-eye"></i>
+          <span>156</span>
+        </div>
+      </div>
+      <p class="article-excerpt">语义化标签不仅能让页面结构更清晰，还能提升SEO效果和无障碍访问体验。本文将详细讲解header、nav、main、article等常用语义化标签的应用场景和使用规范。</p >
+      <div>
+        <span class="article-tag">HTML5</span>
+        <span class="article-tag">语义化</span>
+      </div>
+    </article>
+
+    <article class="article-card">
+      <a href="#" class="article-title">CSS3 Flex 布局实现响应式导航栏</a >
+      <div class="article-meta">
+        <div class="meta-item">
+          <i class="fas fa-calendar-alt"></i>
+          <span>2026-01-03</span>
+        </div>
+        <div class="meta-item">
+          <i class="fas fa-folder-open"></i>
+          <span>CSS进阶</span>
+        </div>
+        <div class="meta-item">
+          <i class="fas fa-eye"></i>
+          <span>218</span>
+        </div>
+      </div>
+      <p class="article-excerpt">Flex布局是前端开发中必备的布局方式，用它实现响应式导航栏简洁高效。本文将手把手教你从0到1搭建一个适配PC和移动端的Flex导航栏，附带完整代码示例。</p >
+      <div>
+        <span class="article-tag">CSS3</span>
+        <span class="article-tag">Flex布局</span>
+        <span class="article-tag">响应式</span>
+      </div>
+    </article>
+
+    <article class="article-card">
+      <a href="#" class="article-title">JavaScript 实现动态加载文章内容</a >
+      <div class="article-meta">
+        <div class="meta-item">
+          <i class="fas fa-calendar-alt"></i>
+          <span>2025-12-28</span>
+        </div>
+        <div class="meta-item">
+          <i class="fas fa-folder-open"></i>
+          <span>JS实战</span>
+        </div>
+        <div class="meta-item">
+          <i class="fas fa-eye"></i>
+          <span>189</span>
+        </div>
+      </div>
+      <p class="article-excerpt">动态加载能有效提升页面加载速度和用户体验，本文将使用原生JavaScript结合fetch API实现文章列表的懒加载功能，无需依赖任何框架，简单易懂。</p >
+      <div>
+        <span class="article-tag">JavaScript</span>
+        <span class="article-tag">懒加载</span>
+        <span class="article-tag">fetch API</span>
+      </div>
+    </article>
+  <footer class="footer">
+    <p>whlb</p >
+    <div class="social-links">
+      <a href="#"><i class="fab fa-github"></i></a >
+      <a href="#"><i class="fab fa-csdn"></i></a >
+      <a href="#"><i class="fab fa-weixin"></i></a >
+    </div>
+  </footer>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('navLinks');
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+    });
+  </script>
+</body>
+</html>
